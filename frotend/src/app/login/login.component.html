@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    
+</head>
+
+<body>
+    <section class="highlight-clean" style="height: 700px;background: #466235;">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center" style="color: rgb(255,255,255);margin-top: 0px;border-color: rgb(255,255,255);">Login</h2>
+            </div>
+        </div>
+        <section class="login-clean" style="border-top-left-radius: 10px;border-top-right-radius: 10px;background: rgb(255,255,255);height: 643.312px;">
+            <h2 class="text-center" style="color: rgb(0,0,0);margin-top: 0px;">Find<span style="color: #114a9e;">.</span>Tutor</h2>
+            <form class="shadow-none" method="post" [formGroup] = "userForm">
+                <h2 class="visually-hidden">Login Form</h2>
+                <div class="mb-3"><label class="form-label"><strong>Email</strong></label>
+                    <div class="input-group"><input formControlName="email" name = "email" class="form-control" type="text"><span class="input-group-text" style="border-top-right-radius: 0px;border-bottom-right-radius: 0px;"><i class="fa fa-envelope"></i></span></div>
+                </div>
+                <div class="mb-3"><label class="form-label"><strong>Password</strong></label>
+                    <div class="input-group"><input formControlName="password" name="password" class="form-control" type="password"><span class="input-group-text" style="border-top-right-radius: 0px;border-bottom-right-radius: 0px;"><i class="fa fa-envelope"></i></span></div>
+                </div>
+                <p><a class="float-end forgot" href="#" style="font-weight: bold;color: var(--bs-red);">Forgot password?&nbsp;</a></p>
+                <div class="mb-3"></div>
+                <div class="mb-3"></div>
+                <div class="text-center mb-3"><button class="btn text-center" type="button" style="background: #FCBA03;" (click)= "login()" >Login</button></div><a class="forgot"  style="font-weight: bold;">Don't&nbsp; you have an account?&nbsp;<span style="color: #FCBA03;" [routerLink]="['/register']" routerLinkActive="router-link-active" >Register here</span></a>
+            </form>
+        </section>
+    </section>
+</body>
+
+</html>

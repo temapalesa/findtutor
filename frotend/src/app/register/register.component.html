@@ -1,0 +1,134 @@
+<!-- <div class="Container">
+
+</div>
+<div class="card-body">
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+        <div class= "form-group">
+            <input type="text" name="title" placeholder="Name" formControlName="name"  required>
+        </div>
+        <div >
+            <input type="text" name="body" placeholder="Surname"  formControlName="surname" required>
+        </div>
+        <div >
+            <input type="text" name="email" placeholder="Email"  formControlName="email" required>
+        </div>
+        <div >
+            <input type="text" name="accounttype" placeholder="Accoun Ttype"  formControlName="accounttype" required>
+        </div>
+        <div >
+            <input type="text" name="password" placeholder="Password"  formControlName="password" required>
+        </div>
+        <div >
+            <input type="text" name="phonenumber" placeholder="Phone number"  formControlName="phonenumber" required>
+        </div>
+        <br>
+        <button class = "btn btn-primary"  type="submit" >Add</button>
+      
+    </form>
+    
+</div> -->
+
+
+<!-- <div class="jumbotron" style="background-color: var( --main-bg);">
+    <h1 class="display-9">Jumbo heading</h1>
+
+    <hr class="my-2">
+ 
+    <p class="lead">
+      
+    </p>
+</div>
+<div class="container">
+
+</div>
+<div class="card-body">
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+        <div class= "form-group">
+            <input type="text" name="title" placeholder="Name" formControlName="name"  required>
+        </div>
+        <div >
+            <input type="text" name="body" placeholder="Surname"  formControlName="surname" required>
+        </div>
+        <div >
+            <input type="text" name="email" placeholder="Email"  formControlName="email" required>
+        </div>
+        <div >
+            <input type="text" name="accounttype" placeholder="Accoun Ttype"  formControlName="accounttype" required>
+        </div>
+        <div >
+            <input type="text" name="password" placeholder="Password"  formControlName="password" required>
+        </div>
+        <div >
+            <input type="text" name="phonenumber" placeholder="Phone number"  formControlName="phonenumber" required>
+        </div>
+        <br>
+        <button class = "btn btn-primary"  type="submit" >Add</button>
+      
+    </form>
+    
+</div> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    
+</head>
+
+<body>
+    <section class="highlight-clean" style="height: 700px;background: #466235;">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center" style="color: rgb(255,255,255);margin-top: 0px;border-color: rgb(255,255,255);">Register</h2>
+            </div>
+        </div>
+        <section class="login-clean" style="border-top-left-radius: 10px;border-top-right-radius: 10px;background: rgb(255,255,255);height: 643.312px;">
+            <h2 class="text-center" style="color: rgb(0,0,0);margin-top: 0px;">Find<span style="color: #114a9e;">.</span>Tutor</h2>
+            <form class="shadow-none" method="post" [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+
+                <h2 class="visually-hidden">Register Form</h2>
+
+                <div class="mb-3"><label class="form-label"><strong>Name</strong></label>
+                    <div class="input-group"><input formControlName="name" name = "name" class="form-control" type="text"><span class="input-group-text" style="border-top-right-radius: 0px;border-bottom-right-radius: 0px;"><i class="fa fa-envelope"></i></span></div>
+                </div>
+
+                <div class="mb-3"><label class="form-label"><strong>Surname</strong></label>
+                    <div class="input-group"><input formControlName="surname" name="surname" class="form-control" type="text"><span class="input-group-text" style="border-top-right-radius: 0px;border-bottom-right-radius: 0px;"><i class="fa fa-envelope"></i></span></div>
+                </div>
+
+                <div class="mb-3"><label class="form-label"><strong>Email</strong></label>
+                    <div class="input-group"><input formControlName="email" name="email" class="form-control" type="text"><span class="input-group-text" style="border-top-right-radius: 0px;border-bottom-right-radius: 0px;"><i class="fa fa-envelope"></i></span></div>
+                </div>
+
+                <div class="mb-3"><label class="form-label"><strong>Account type</strong></label>
+                    <div class="input-group"><input formControlName="accounttype" name="password" class="form-control" type="text">
+                    <span class="input-group-text" style="border-top-right-radius: 0px;border-bottom-right-radius: 0px;">
+                        <i class="fa fa-envelope"></i></span></div>
+                </div>
+
+                <div class="mb-3"><label class="form-label"><strong>Phone number</strong></label>
+                    <div class="input-group"><input formControlName="phonenumber" name="password" class="form-control" type="text"><span class="input-group-text" style="border-top-right-radius: 0px;border-bottom-right-radius: 0px;"><i class="fa fa-envelope"></i></span></div>
+                </div>
+
+                <div class="mb-3"><label class="form-label"><strong>Password</strong></label>
+                    <div class="input-group"><input formControlName="password" name="password" class="form-control" type="password"><span class="input-group-text" style="border-top-right-radius: 0px;border-bottom-right-radius: 0px;"><i class="fa fa-envelope"></i></span></div>
+                </div>
+
+                <div class="mb-3"><label class="form-label"><strong>Confirm Password</strong></label>
+                    <div class="input-group"><input formControlName="password" name="cpassword" class="form-control" type="password"><span class="input-group-text" style="border-top-right-radius: 0px;border-bottom-right-radius: 0px;"><i class="fa fa-envelope"></i></span></div>
+                </div>
+
+               
+                <div class="mb-3"></div>
+                <div class="mb-3"></div>
+                <div class="text-center mb-3"><button class="btn text-center" type="submit" style="background: #FCBA03;" [routerLink]="['/login']" routerLinkActive="router-link-active"  >Register</button></div>
+            </form>
+        </section>
+    </section>
+</body>
+
+</html>
