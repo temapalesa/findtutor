@@ -10,6 +10,14 @@ import { NgToastModule } from 'ng-angular-popup';
 import {HttpClientModule} from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
+import { TutorpostComponent } from './tutor/tutorpost/tutorpost.component';
+import { ProfileComponent } from './tutor/profile/profile.component';
+import { FindtutorComponent } from './client/findtutor/findtutor.component';
+import { ClientpostComponent } from './client/clientpost/clientpost.component';
+import { NavbartutorComponent } from './tutor/navbartutor/navbartutor.component';
+import { NavbarclientComponent } from './client/navbarclient/navbarclient.component';
+import { FindclientComponent } from './tutor/findclient/findclient.component';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +25,14 @@ import { NavbarComponent } from './navbar/navbar.component';
     LoginComponent,
     RegisterComponent,
     HomepageComponent,
-    NavbarComponent
+    NavbarComponent,
+    TutorpostComponent,
+    ProfileComponent,
+    FindtutorComponent,
+    ClientpostComponent,
+    NavbartutorComponent,
+    NavbarclientComponent,
+    FindclientComponent
   ],
   imports: [
     BrowserModule,

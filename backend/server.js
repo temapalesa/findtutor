@@ -21,6 +21,10 @@ app.get('/', (request, response)=>{
 app.get('/users', db.getUsers)
 app.post('/users' ,db.register)
 app.post('/login', db.login)
+app.post('/tutorpost', db.tutorpost)
+app.get('/tutorposts',db.getAllpost)
+app.post('/clientpost', db.clientpost)
+app.get('/allclientpost' , db.getAllClientPost)
 
 app.listen(port, ()=>{
     console.log(`App running on port ${port}.`)

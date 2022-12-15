@@ -5,6 +5,8 @@ import { NgToastService } from 'ng-angular-popup';
 import { AuthService } from '../service/auth.service';
 import jwt_decode from 'jwt-decode';
 
+
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -19,9 +21,10 @@ export class LoginComponent implements OnInit {
   decoded : any
 
   isSubmitted = false;
- 
+  logindata : any
 
-  constructor(private authservice : AuthService, private router : Router,
+ 
+    constructor(private authservice : AuthService, private router : Router,
   private toastservice : NgToastService, private formbuilder : FormBuilder) { 
     this.myForm();
   }
@@ -52,12 +55,15 @@ export class LoginComponent implements OnInit {
 
          this.decoded = jwt_decode(data.token)
           console.log(this.decoded)
+        
          this.toastservice.success({detail:'Success', summary:'Successfully login!', sticky:false,position:'tr', duration:6000})
-         this.router.navigate(['/profile'])
+         //this.router.navigate(['/profile'])
         sessionStorage.setItem('logginToken', data.token)
         localStorage.setItem("token",data.token)
        sessionStorage.setItem('loggedEmail', this.decoded.email);
          this.isSubmitted = false ;
+         this.logindata = data;
+         
       },(error) =>{
 
         this.toastservice.warning({detail:'Warning',summary:'Email or Password is invalid', sticky:false,position:'tr', duration:600000})
@@ -67,7 +73,9 @@ export class LoginComponent implements OnInit {
     }else{
       this.toastservice.warning({detail:'Warning',summary:'Enter your credentials details', sticky:false,position:'tr', duration:6000})
     }
-  }
+
+   
 
   
+}
 }
